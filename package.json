@@ -1,0 +1,18 @@
+{
+	"name": "to-read-app",
+	"version": "1.0.0",
+	"description": "CRUD App that will be used to keep track of my books/manga reading list",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Alex Fernández",
+	"license": "ISC",
+	"dependencies": {
+		"dotenv": "^16.0.1",
+		"ejs": "^3.1.8",
+		"express": "^4.18.1",
+		"mysql": "^2.18.1",
+		"nodemon": "^2.0.18"
+	}
+}
