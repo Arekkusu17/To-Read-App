@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS/ BoxIcons-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <title>CRUD Reading List</title>
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-4">
+        <div class="card border-secondary">
+            <div class="card-header">New Book</div>
+            <div class="card-body">
+                <form action="/save" method="POST">
+                    <div class="mb-3">
+                        <label for="book" class="form-label">Name</label>
+                        <input type="text" name="name" id="name" class="form-control" tabindex="1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="book" class="form-label">Author</label>
+                        <input type="text" name="author" id="author" class="form-control" tabindex="1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="book" class="form-label">Genre</label>
+                        <input type="text" name="genre" id="genre" class="form-control" tabindex="1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="book" class="form-label">Status</label>
+                        <select type="text" name="status" id="status" class="form-select" tabindex="1">
+                            <option selected>Select the status</option>
+                            <option value="complete">Complete</option>
+                            <option value="On Going">On Going</option>
+                            <option value="Hiatus">Hiatus</option>
+                        </select>
+                    </div>
+                    <button type="submit" tabindex="5" class="btn btn-success mt-4">Add Book</button>
+                    <a href="/" class="btn btn-danger mt-4" tabindex="5">Cancel</a>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
